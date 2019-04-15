@@ -1,0 +1,12 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  buildpack: sdk-for-nodejs
+  command: npm start
+  random-route: true
+  services:
+    - APPID_INSTANCE_REPLACE_ME
+    - CLOUDANT_INSTANCE_REPLACE_ME
+    - PUSH_INSTANCE_REPLACE_ME
+    - CONVERSATION_INSTANCE_REPLACE_ME
